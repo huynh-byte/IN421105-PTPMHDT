@@ -1,5 +1,5 @@
 using System;
-namespace Eduhub.Ch01.Domain{
+namespace EduHub.Ch01.Domain{
     /// <summary>
     /// Câu lạc bộ tổ chức sự kiện.
     /// </summary>
@@ -16,14 +16,14 @@ namespace Eduhub.Ch01.Domain{
             Id = id;
             Name = name;
             Status = StatusActive;
-            SuspendedReason = "";
+            SuspendReason = "";
         }
         /// <summary>
         /// Tạo câu lạc bộ mới, kiểm tra tên không được trống.
         /// </summary>
 
         public static Club Create(string name){
-            if(string.IsNull0rWhiteSpace(name))
+            if (string.IsNullOrWhiteSpace(name))
                  throw new ArgumentException("Tên câu lạc bộ không được để trống.");
             
             return new Club(Guid.NewGuid(), name.Trim()); 
