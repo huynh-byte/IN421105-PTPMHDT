@@ -1,0 +1,9 @@
+﻿bin/
+obj/
+.idea/
+.vs/
+*.user
+*.suo
+club-log.txt
+.DS_Store
+club-report.csv
